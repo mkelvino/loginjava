@@ -32,7 +32,7 @@ public class DashboardAdmin extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("INI DASHBOARD ADMIN");
+        jLabel1.setText("INI DASHBOARD SISWA");
 
         jButton1.setText("Logout");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
