@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 18, 2023 at 02:15 AM
+-- Generation Time: Jul 18, 2023 at 04:51 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -20,6 +20,20 @@ SET time_zone = "+00:00";
 --
 -- Database: `login_siswa`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_mahasiswa`
+--
+
+CREATE TABLE `tbl_mahasiswa` (
+  `nim` int(50) NOT NULL,
+  `nama` varchar(50) NOT NULL,
+  `jurusan` varchar(50) NOT NULL,
+  `jk` char(15) NOT NULL,
+  `alamat` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -47,6 +61,12 @@ INSERT INTO `users` (`username`, `password`, `level`, `id`) VALUES
 --
 
 --
+-- Indexes for table `tbl_mahasiswa`
+--
+ALTER TABLE `tbl_mahasiswa`
+  ADD PRIMARY KEY (`nim`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -55,6 +75,12 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `tbl_mahasiswa`
+--
+ALTER TABLE `tbl_mahasiswa`
+  MODIFY `nim` int(50) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `users`
